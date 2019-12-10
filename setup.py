@@ -9,11 +9,9 @@ setup(
     description='A CLI client and Python API library for the Mandrill email as a service platform. Forked fork python 3.7 support',
     license='Apache-2.0',
     keywords='mandrill email api',
-    package=[
+    packages=[
         "mandrill"
     ],
-    package_dir={'mandrill': 'mandrill'},
-    py_modules=['mandrill'],
     install_requires=['requests >= 0.13.2', 'docopt == 0.4.0'],
     provides='mandrill',
     classifiers=[
