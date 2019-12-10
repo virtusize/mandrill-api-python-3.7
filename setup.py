@@ -3,15 +3,16 @@ import os.path
 
 setup(
     name='mandrill-37',
-    version='1.1.0',
-    author='Mandrill Devs. Forked by Florian Mounier',
+    version='2.0.0',
+    author='Florian Mounier. Forked by Virtusize team',
     author_email='community@mandrill.com',
     description='A CLI client and Python API library for the Mandrill email as a service platform. Forked fork python 3.7 support',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README')).read(),
     license='Apache-2.0',
     keywords='mandrill email api',
-    url='https://bitbucket.org/mailchimp/mandrill-api-python/',
-    scripts=['scripts/mandrill', 'scripts/sendmail.mandrill'],
+    package=[
+        "mandrill"
+    ],
     py_modules=['mandrill'],
     install_requires=['requests >= 0.13.2', 'docopt == 0.4.0'],
     provides='mandrill',
