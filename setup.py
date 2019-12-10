@@ -2,7 +2,7 @@ from setuptools import setup
 import os.path
 
 setup(
-    name='mandrill-37',
+    name='mandrill',
     version='2.0.0',
     author='Florian Mounier. Forked by Virtusize team',
     author_email='community@mandrill.com',
@@ -12,6 +12,7 @@ setup(
     package=[
         "mandrill"
     ],
+    package_dir={'mandrill': 'mandrill'},
     py_modules=['mandrill'],
     install_requires=['requests >= 0.13.2', 'docopt == 0.4.0'],
     provides='mandrill',
