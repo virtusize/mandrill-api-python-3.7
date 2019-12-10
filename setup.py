@@ -7,7 +7,6 @@ setup(
     author='Florian Mounier. Forked by Virtusize team',
     author_email='community@mandrill.com',
     description='A CLI client and Python API library for the Mandrill email as a service platform. Forked fork python 3.7 support',
-    long_description=open(os.path.join(os.path.dirname(__file__), 'README')).read(),
     license='Apache-2.0',
     keywords='mandrill email api',
     package=[
